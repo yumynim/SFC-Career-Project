@@ -1794,7 +1794,7 @@ body[data-accent="sage"] {
   .tl-phases { grid-template-columns: repeat(2, 1fr); }
 
   .point { grid-template-columns: 1fr; gap: 32px; padding: 40px 0; }
-  .point.reverse .point-visual { order: 0; }
+  .point.reverse .point-visual { order: 1; }
   .persona-grid { grid-template-columns: 1fr; }
   .course-list { grid-template-columns: 1fr; }
   .step-list { flex-wrap: wrap; gap: 8px; }
