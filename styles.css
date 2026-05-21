@@ -889,7 +889,11 @@ section { padding: 88px 0; }
 }
 .point-visual {
   position: relative;
-  aspect-ratio: 5 / 4;
+  aspect-ratio: 4 / 3;
+  background: #f0f3f7;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
 }
 .point-visual img {
   position: absolute;
@@ -897,7 +901,8 @@ section { padding: 88px 0; }
   width: 100%;
   height: 100%;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  object-fit: contain;
+  padding: 6px;
 }
 .point-visual .visual-tag {
   position: absolute;
