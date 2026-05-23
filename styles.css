@@ -336,19 +336,19 @@ button { font: inherit; cursor: pointer; }
 .hero-bg-overlay {
   position: absolute;
   inset: 0;
-  /* White fog on the left + bottom edges, blending into the white surround */
+  /* Dark fade from left + bottom, blending into the SFC image */
   background:
     linear-gradient(90deg,
-      rgba(255,255,255,1)   0%,
-      rgba(255,255,255,.85) 8%,
-      rgba(255,255,255,.45) 20%,
-      rgba(255,255,255,.15) 36%,
-      rgba(255,255,255,0)   52%),
+      rgba(18,13,8,1)    0%,
+      rgba(18,13,8,.92)  18%,
+      rgba(18,13,8,.65)  35%,
+      rgba(18,13,8,.25)  52%,
+      rgba(18,13,8,0)    68%),
     linear-gradient(180deg,
-      rgba(255,255,255,0)   50%,
-      rgba(255,255,255,.25) 75%,
-      rgba(255,255,255,.7)  92%,
-      rgba(255,255,255,1)   100%);
+      rgba(18,13,8,0)    40%,
+      rgba(18,13,8,.4)   75%,
+      rgba(18,13,8,.85)  92%,
+      rgba(18,13,8,1)    100%);
   pointer-events: none;
 }
 .hero-copy {
@@ -1487,7 +1487,7 @@ section { padding: 88px 0; }
   position: relative;
   font-size: 15px;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--ink);
   line-height: 1.6;
 }
 .faq-item summary::-webkit-details-marker { display: none; }
@@ -1508,8 +1508,8 @@ section { padding: 88px 0; }
   top: 50%;
   width: 10px;
   height: 10px;
-  border-right: 2px solid var(--navy);
-  border-bottom: 2px solid var(--navy);
+  border-right: 2px solid var(--gold-2);
+  border-bottom: 2px solid var(--gold-2);
   transform: translateY(-70%) rotate(45deg);
   transition: transform .2s ease;
 }
@@ -1531,7 +1531,7 @@ section { padding: 88px 0; }
   font-family: Georgia, serif;
   font-size: 18px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--gold-2);
 }
 
 /* ---------- CTA Banner ---------- */
