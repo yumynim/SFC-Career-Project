@@ -1686,8 +1686,8 @@ select.form-control {
 
 /* ---------- Footer ---------- */
 .footer {
-  background: #07152b;
-  color: rgba(255,255,255,.7);
+  background: #0a0704;
+  color: rgba(240,232,216,.6);
   padding: 56px 0 24px;
   font-size: 13px;
 }
@@ -1703,7 +1703,7 @@ select.form-control {
   font-size: 12px;
   line-height: 1.85;
   margin: 16px 0 0;
-  color: rgba(255,255,255,.6);
+  color: rgba(240,232,216,.5);
 }
 .footer h5 {
   font-size: 12px;
@@ -1716,14 +1716,14 @@ select.form-control {
 .footer ul li { margin-bottom: 10px; font-size: 12px; }
 .footer ul li a:hover { color: var(--gold); }
 .footer-base {
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid rgba(212,160,32,.15);
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
   font-size: 11px;
-  color: rgba(255,255,255,.4);
+  color: rgba(240,232,216,.35);
 }
 
 /* ---------- Tweaks: theme variants ---------- */
