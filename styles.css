@@ -8,17 +8,17 @@
   --navy:        #120d08;
   --navy-2:      #1e1610;
   --navy-3:      #2e2214;
-  --navy-soft:   #f5f0e0;
+  --navy-soft:   #231710;
   --gold:        #d4a020;
   --gold-2:      #b08010;
   --gold-soft:   #faf3dc;
-  --paper:       #faf8f3;
-  --paper-2:     #f0ede4;
-  --ink:         #1a1a1a;
-  --ink-2:       #4a4a4a;
-  --ink-3:       #7a7a78;
-  --rule:        #e6e3d9;
-  --rule-2:      #d8d4c5;
+  --paper:       #1a1208;
+  --paper-2:     #231710;
+  --ink:         #f0e8d8;
+  --ink-2:       #c0a878;
+  --ink-3:       #7a6040;
+  --rule:        #2e2010;
+  --rule-2:      #3e2e18;
   --danger:      #c0392b;
   --shadow-sm:   0 1px 2px rgba(0,0,0,.08);
   --shadow-md:   0 6px 24px rgba(0,0,0,.12);
@@ -89,7 +89,7 @@ button { font: inherit; cursor: pointer; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255,255,255,.94);
+  background: rgba(18,13,8,.96);
   backdrop-filter: saturate(140%) blur(8px);
   border-bottom: 1px solid var(--rule);
 }
@@ -130,7 +130,7 @@ button { font: inherit; cursor: pointer; }
   display: block;
 }
 .brand-text { line-height: 1.1; display: flex; align-items: center; }
-.brand-name { font-size: 18px; font-weight: 600; color: var(--navy); letter-spacing: .01em; }
+.brand-name { font-size: 18px; font-weight: 600; color: var(--ink); letter-spacing: .01em; }
 .brand-sub  { font-size: 10px; font-weight: 500; color: var(--ink-3); letter-spacing: .12em; margin-top: 2px; }
 
 .nav {
@@ -144,7 +144,7 @@ button { font: inherit; cursor: pointer; }
   color: var(--ink-2);
   transition: color .15s ease;
 }
-.nav a:hover { color: var(--navy); }
+.nav a:hover { color: var(--gold); }
 
 .header-cta {
   display: flex;
@@ -199,7 +199,7 @@ button { font: inherit; cursor: pointer; }
   right: 0;
   width: min(320px, 86vw);
   height: 100dvh;
-  background: #fff;
+  background: #1e1510;
   border-left: 1px solid var(--rule);
   box-shadow: -8px 0 32px rgba(20, 22, 34, .08);
   padding: 88px 28px 32px;
@@ -246,7 +246,7 @@ button { font: inherit; cursor: pointer; }
   padding: 14px 4px;
   font-size: 15px;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--ink);
   border-bottom: 1px solid var(--rule);
   letter-spacing: .01em;
 }
@@ -294,10 +294,10 @@ button { font: inherit; cursor: pointer; }
 
 .btn-outline {
   background: transparent;
-  color: var(--navy);
+  color: var(--ink);
   border-color: var(--rule-2);
 }
-.btn-outline:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+.btn-outline:hover { background: var(--gold); color: var(--navy); border-color: var(--gold); }
 
 .btn-lg {
   font-size: 15px;
@@ -306,7 +306,7 @@ button { font: inherit; cursor: pointer; }
 
 /* ---------- Hero ---------- */
 .hero {
-  background: #fff;
+  background: #120d08;
   position: relative;
   overflow: hidden;
 }
@@ -375,7 +375,7 @@ button { font: inherit; cursor: pointer; }
   font-size: 12px;
   font-weight: 600;
   letter-spacing: .14em;
-  color: var(--navy);
+  color: var(--ink);
   margin-bottom: 22px;
 }
 .hero-eyebrow::before {
@@ -388,7 +388,7 @@ button { font: inherit; cursor: pointer; }
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: .01em;
-  color: var(--navy);
+  color: var(--ink);
   margin: 0 0 20px;
   white-space: nowrap;
 }
@@ -403,7 +403,7 @@ button { font: inherit; cursor: pointer; }
   line-height: 1.85;
 }
 .hero-sub strong {
-  color: var(--navy);
+  color: var(--ink);
   font-weight: 600;
 }
 .hero-cta {
@@ -427,7 +427,7 @@ button { font: inherit; cursor: pointer; }
 .stat-num {
   font-size: 32px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--gold);
   letter-spacing: -.02em;
   line-height: 1;
 }
@@ -510,7 +510,7 @@ section { padding: 88px 0; }
 .section-title {
   font-size: clamp(26px, 3vw, 36px);
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   line-height: 1.4;
   margin: 0 0 16px;
   letter-spacing: .02em;
@@ -538,7 +538,7 @@ section { padding: 88px 0; }
 }
 
 /* ---------- About SFC AO ---------- */
-.sfc-ao { background: #fff; }
+.sfc-ao { background: #1a1208; }
 .sfc-ao-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -562,7 +562,7 @@ section { padding: 88px 0; }
 .sfc-ao-card .figure {
   font-size: 40px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   letter-spacing: -.01em;
   line-height: 1.1;
   margin-bottom: 10px;
@@ -593,7 +593,7 @@ section { padding: 88px 0; }
 .tl-phase {
   position: relative;
   padding: 22px 22px 22px 26px;
-  background: #fff;
+  background: #1e1510;
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   border-left: 3px solid var(--rule-2);
@@ -608,11 +608,11 @@ section { padding: 88px 0; }
   color: var(--ink-3);
   margin-bottom: 6px;
 }
-.tl-phase.passed .tl-phase-no { color: var(--navy); }
+.tl-phase.passed .tl-phase-no { color: var(--gold); }
 .tl-phase-name {
   font-size: 17px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   margin-bottom: 4px;
   letter-spacing: .04em;
 }
@@ -669,16 +669,16 @@ section { padding: 88px 0; }
 .tl-dot {
   width: 18px; height: 18px;
   border-radius: 50%;
-  background: #fff;
+  background: #231710;
   border: 2px solid var(--rule-2);
   margin: 0 auto;
   position: relative;
   z-index: 3;
 }
 .tl-step.passed .tl-dot { background: var(--navy); border-color: var(--navy); }
-.tl-step.passed .tl-month { color: var(--navy); }
+.tl-step.passed .tl-month { color: var(--gold-2); }
 
-.tl-step.active .tl-month { color: var(--navy); font-weight: 600; }
+.tl-step.active .tl-month { color: var(--gold); font-weight: 600; }
 .tl-step.active .tl-dot {
   width: 24px; height: 24px;
   margin-top: -3px;
@@ -697,7 +697,7 @@ section { padding: 88px 0; }
 
 .tl-dot.critical {
   border-color: var(--danger);
-  background: #fff;
+  background: #231710;
   box-shadow: 0 0 0 4px rgba(192,57,43,.12);
 }
 .tl-step .tl-label {
@@ -707,7 +707,7 @@ section { padding: 88px 0; }
   line-height: 1.6;
   font-weight: 500;
 }
-.tl-step.active .tl-label { color: var(--navy); font-weight: 600; }
+.tl-step.active .tl-label { color: var(--gold); font-weight: 600; }
 
 .tl-here {
   position: absolute;
@@ -750,14 +750,14 @@ section { padding: 88px 0; }
   margin-top: 56px;
   text-align: center;
   padding: 32px;
-  background: #fff;
+  background: #231710;
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
 }
 .tl-cta p {
   font-size: 15px;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--ink);
   margin: 0 0 18px;
   letter-spacing: .04em;
 }
@@ -835,7 +835,7 @@ section { padding: 88px 0; }
 }
 
 /* ---------- Points (USP) ---------- */
-.points { background: #fff; }
+.points { background: #120d08; }
 .point {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -857,7 +857,7 @@ section { padding: 88px 0; }
 .point-num .digit {
   font-size: 40px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--gold);
   margin-right: 10px;
   letter-spacing: -.02em;
   vertical-align: -2px;
@@ -865,7 +865,7 @@ section { padding: 88px 0; }
 .point h3 {
   font-size: clamp(22px, 2.4vw, 28px);
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   margin: 0 0 20px;
   line-height: 1.5;
 }
@@ -883,8 +883,8 @@ section { padding: 88px 0; }
 .point-pill {
   font-size: 12px;
   padding: 6px 12px;
-  background: var(--navy-soft);
-  color: var(--navy);
+  background: #2e1e08;
+  color: var(--gold);
   border-radius: 4px;
   font-weight: 500;
 }
@@ -924,7 +924,7 @@ section { padding: 88px 0; }
   margin-top: 12px;
 }
 .persona-card {
-  background: #fff;
+  background: #231710;
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   padding: 32px;
@@ -948,7 +948,7 @@ section { padding: 88px 0; }
 .persona-card h4 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   margin: 0 0 8px;
 }
 .persona-card .grade {
@@ -967,7 +967,7 @@ section { padding: 88px 0; }
 .persona-card .recommend {
   font-size: 12px;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--gold-2);
   padding-top: 12px;
   border-top: 1px solid var(--rule);
 }
@@ -977,7 +977,7 @@ section { padding: 88px 0; }
 }
 
 /* ---------- Courses ---------- */
-.courses { background: #fff; }
+.courses { background: #1a1208; }
 .course-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -988,7 +988,7 @@ section { padding: 88px 0; }
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   padding: 36px 32px;
-  background: #fff;
+  background: #231710;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1024,7 +1024,7 @@ section { padding: 88px 0; }
 .course-card h3 {
   font-size: 19px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   margin: 0 0 6px;
   line-height: 1.5;
   letter-spacing: .02em;
@@ -1045,7 +1045,7 @@ section { padding: 88px 0; }
 .course-price .num {
   font-size: 34px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   letter-spacing: -.02em;
   line-height: 1;
 }
@@ -1062,7 +1062,7 @@ section { padding: 88px 0; }
   font-size: 11px;
   font-weight: 600;
   color: var(--danger);
-  background: #fbeae8;
+  background: #2a1008;
   padding: 3px 8px;
   border-radius: 3px;
   margin-bottom: 24px;
@@ -1094,8 +1094,8 @@ section { padding: 88px 0; }
 }
 .course-guarantee {
   font-size: 11px;
-  color: var(--navy);
-  background: var(--navy-soft);
+  color: var(--ink-2);
+  background: #2e1e08;
   padding: 10px 12px;
   border-radius: 6px;
   margin-bottom: 20px;
@@ -1117,7 +1117,7 @@ section { padding: 88px 0; }
   border-radius: 8px;
   font-size: 13px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s;
   letter-spacing: .02em;
@@ -1183,7 +1183,7 @@ section { padding: 88px 0; }
 .comparison h4 {
   font-size: 14px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   margin: 0 0 20px;
   letter-spacing: .04em;
 }
@@ -1200,8 +1200,8 @@ section { padding: 88px 0; }
   color: var(--ink-2);
 }
 .comparison-table th { font-weight: 500; color: var(--ink-3); width: 40%; }
-.comparison-table tr.us td { font-weight: 600; color: var(--navy); }
-.comparison-table tr.us th { color: var(--navy); }
+.comparison-table tr.us td { font-weight: 600; color: var(--gold); }
+.comparison-table tr.us th { color: var(--gold-2); }
 
 /* ---------- Steps ---------- */
 .steps { background: var(--paper); }
@@ -1213,7 +1213,7 @@ section { padding: 88px 0; }
 }
 .step-card {
   flex: 1;
-  background: #fff;
+  background: #231710;
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   padding: 28px 20px;
@@ -1224,7 +1224,7 @@ section { padding: 88px 0; }
   font-family: Georgia, serif;
   font-size: 28px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--gold);
   line-height: 1;
   margin-bottom: 12px;
   opacity: 0.15;
@@ -1232,7 +1232,7 @@ section { padding: 88px 0; }
 .step-card h4 {
   font-size: 15px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   margin: 0 0 8px;
   line-height: 1.4;
 }
@@ -1263,7 +1263,7 @@ section { padding: 88px 0; }
 }
 
 /* ---------- Teacher ---------- */
-.teacher { background: #fff; }
+.teacher { background: #120d08; }
 .teacher-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1274,9 +1274,10 @@ section { padding: 88px 0; }
   grid-template-columns: 320px 1fr;
   gap: 56px;
   align-items: start;
-  background: var(--paper);
+  background: #1e1510;
   border-radius: var(--radius-lg);
   padding: 56px;
+  border: 1px solid var(--rule);
 }
 .teacher-card.no-photo {
   grid-template-columns: 1fr;
@@ -1320,7 +1321,7 @@ section { padding: 88px 0; }
 .teacher-body h3 {
   font-size: 22px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   margin: 0 0 8px;
   line-height: 1.5;
 }
@@ -1340,7 +1341,7 @@ section { padding: 88px 0; }
 .teacher-meta span {
   font-size: 12px;
   padding: 4px 10px;
-  background: #fff;
+  background: #2a1e10;
   border: 1px solid var(--rule);
   border-radius: 4px;
   color: var(--ink-2);
@@ -1356,7 +1357,7 @@ section { padding: 88px 0; }
   padding: 4px 0 4px 20px;
   font-size: 14px;
   font-weight: 500;
-  color: var(--navy);
+  color: var(--ink-2);
   line-height: 1.85;
   letter-spacing: .02em;
 }
@@ -1374,7 +1375,7 @@ section { padding: 88px 0; }
 .tutor-team-head h3 {
   font-size: 22px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink);
   margin: 10px 0 12px;
   letter-spacing: .02em;
   line-height: 1.5;
@@ -1416,7 +1417,7 @@ section { padding: 88px 0; }
 .tutor-field {
   font-size: 14px;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--gold-2);
   margin-bottom: 4px;
   letter-spacing: .02em;
 }
@@ -1447,7 +1448,7 @@ section { padding: 88px 0; }
   margin: -4px 0 22px;
 }
 .form-osaka-note strong {
-  color: var(--navy);
+  color: var(--ink);
   font-weight: 600;
   display: block;
   margin-bottom: 2px;
@@ -1471,7 +1472,7 @@ section { padding: 88px 0; }
   margin: 0 auto;
 }
 .faq-item {
-  background: #fff;
+  background: #1e1510;
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   margin-bottom: 12px;
@@ -1585,11 +1586,11 @@ section { padding: 88px 0; }
 .cta-banner .btn-outline:hover { background: #fff; color: var(--navy); border-color: #fff; }
 
 /* ---------- Form ---------- */
-.form-section { background: var(--paper); }
+.form-section { background: #120d08; }
 .form-wrap {
   max-width: 760px;
   margin: 0 auto;
-  background: #fff;
+  background: #231710;
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   padding: 48px 56px;
@@ -1636,7 +1637,7 @@ section { padding: 88px 0; }
   padding: 11px 14px;
   font: inherit;
   font-size: 14px;
-  background: #fff;
+  background: #2a1e10;
   border: 1px solid var(--rule-2);
   border-radius: var(--radius);
   color: var(--ink);
