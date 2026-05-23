@@ -925,7 +925,7 @@ section { padding: 88px 0; }
 }
 .persona-card {
   background: #231710;
-  border: 1px solid var(--rule);
+  border: 1px solid rgba(212,160,32,.15);
   border-radius: var(--radius-lg);
   padding: 32px;
   display: grid;
@@ -1214,7 +1214,7 @@ section { padding: 88px 0; }
 .step-card {
   flex: 1;
   background: #231710;
-  border: 1px solid var(--rule);
+  border: 1px solid rgba(212,160,32,.18);
   border-radius: var(--radius-lg);
   padding: 28px 20px;
   text-align: center;
@@ -1248,7 +1248,8 @@ section { padding: 88px 0; }
   font-size: 11px;
   font-weight: 500;
   color: var(--gold-2);
-  background: var(--gold-soft);
+  background: transparent;
+  border: 1px solid rgba(212,160,32,.35);
   padding: 2px 8px;
   border-radius: 3px;
   letter-spacing: .04em;
@@ -1473,7 +1474,7 @@ section { padding: 88px 0; }
 }
 .faq-item {
   background: #1e1510;
-  border: 1px solid var(--rule);
+  border: 1px solid rgba(212,160,32,.15);
   border-radius: var(--radius);
   margin-bottom: 12px;
   overflow: hidden;
