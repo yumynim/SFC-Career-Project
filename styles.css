@@ -2018,42 +2018,54 @@ body[data-accent="sage"] {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: .22;
+  opacity: .38;
 }
 .kosen-bg-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(13,10,6,.95) 0%, rgba(13,10,6,.7) 50%, rgba(13,10,6,.55) 100%),
-    linear-gradient(180deg, rgba(13,10,6,.4) 0%, rgba(13,10,6,.0) 40%, rgba(13,10,6,.6) 100%);
+    linear-gradient(90deg, rgba(13,10,6,.92) 0%, rgba(13,10,6,.6) 45%, rgba(13,10,6,.4) 100%),
+    linear-gradient(180deg, rgba(13,10,6,.5) 0%, rgba(13,10,6,.0) 40%, rgba(13,10,6,.7) 100%);
 }
 .kosen-inner {
   position: relative;
   z-index: 1;
 }
 .kosen-alert {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  background: rgba(180,40,40,.15);
-  border: 1px solid rgba(220,60,60,.4);
+  background: rgba(192,57,43,.2);
+  border: 1px solid rgba(220,60,60,.55);
+  border-left: 4px solid #e74c3c;
   border-radius: 8px;
-  padding: 14px 20px;
-  margin-bottom: 48px;
-  font-size: 13px;
-  color: #f0c8c8;
-  line-height: 1.75;
+  padding: 20px 24px;
+  margin-bottom: 52px;
+}
+.kosen-alert-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 .kosen-alert-badge {
   flex-shrink: 0;
-  background: #c0392b;
+  background: #e74c3c;
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: .08em;
-  padding: 2px 8px;
-  border-radius: 3px;
-  margin-top: 2px;
+  letter-spacing: .1em;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+.kosen-alert-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffd8d0;
+  line-height: 1.6;
+}
+.kosen-alert-body p {
+  font-size: 14px;
+  color: rgba(255,210,200,.8);
+  line-height: 1.9;
+  margin: 0 0 4px;
 }
 .kosen-headline {
   font-size: clamp(28px, 4vw, 48px);
@@ -2106,13 +2118,10 @@ body[data-accent="sage"] {
   line-height: 1.75;
   margin: 0;
 }
-.kosen-price-box {
+.kosen-price-plain {
   display: inline-block;
-  background: rgba(212,160,32,.1);
-  border: 1px solid rgba(212,160,32,.35);
-  border-radius: var(--radius-lg);
-  padding: 32px 40px;
-  text-align: center;
+  padding: 0;
+  text-align: left;
 }
 .kosen-price-label {
   font-size: 12px;
@@ -2122,10 +2131,11 @@ body[data-accent="sage"] {
   margin-bottom: 8px;
 }
 .kosen-price-num {
-  font-size: 42px;
+  font-size: clamp(36px, 5vw, 56px);
   font-weight: 700;
   color: #f0e8d8;
   line-height: 1;
+  margin: 6px 0;
 }
 .kosen-price-unit {
   font-size: 18px;
