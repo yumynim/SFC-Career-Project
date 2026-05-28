@@ -2000,3 +2000,148 @@ body[data-accent="sage"] {
   .hero-stats { gap: 8px; }
   .stat-num { font-size: 21px; }
 }
+
+/* ========== 高専生セクション ========== */
+.kosen-section {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+  background: #0d0a06;
+}
+.kosen-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.kosen-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: .22;
+}
+.kosen-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(13,10,6,.95) 0%, rgba(13,10,6,.7) 50%, rgba(13,10,6,.55) 100%),
+    linear-gradient(180deg, rgba(13,10,6,.4) 0%, rgba(13,10,6,.0) 40%, rgba(13,10,6,.6) 100%);
+}
+.kosen-inner {
+  position: relative;
+  z-index: 1;
+}
+.kosen-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(180,40,40,.15);
+  border: 1px solid rgba(220,60,60,.4);
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 48px;
+  font-size: 13px;
+  color: #f0c8c8;
+  line-height: 1.75;
+}
+.kosen-alert-badge {
+  flex-shrink: 0;
+  background: #c0392b;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+.kosen-headline {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  color: #f0e8d8;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  letter-spacing: -.01em;
+}
+.kosen-accent {
+  color: var(--gold);
+}
+.kosen-sub {
+  font-size: clamp(14px, 1.6vw, 17px);
+  color: rgba(240,232,216,.7);
+  line-height: 1.85;
+  margin-bottom: 56px;
+}
+.kosen-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+.kosen-benefit {
+  background: rgba(212,160,32,.07);
+  border: 1px solid rgba(212,160,32,.2);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+}
+.kosen-benefit-num {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold);
+  opacity: .4;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.kosen-benefit h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f0e8d8;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.kosen-benefit p {
+  font-size: 12.5px;
+  color: rgba(240,232,216,.6);
+  line-height: 1.75;
+  margin: 0;
+}
+.kosen-price-box {
+  display: inline-block;
+  background: rgba(212,160,32,.1);
+  border: 1px solid rgba(212,160,32,.35);
+  border-radius: var(--radius-lg);
+  padding: 32px 40px;
+  text-align: center;
+}
+.kosen-price-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  color: var(--gold-2);
+  margin-bottom: 8px;
+}
+.kosen-price-num {
+  font-size: 42px;
+  font-weight: 700;
+  color: #f0e8d8;
+  line-height: 1;
+}
+.kosen-price-unit {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(240,232,216,.7);
+  margin-left: 4px;
+}
+.kosen-price-detail {
+  font-size: 12px;
+  color: rgba(240,232,216,.5);
+  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .kosen-section { padding: 56px 0; }
+  .kosen-benefits { grid-template-columns: 1fr; gap: 12px; }
+  .kosen-alert { font-size: 12px; }
+  .kosen-price-box { padding: 24px 28px; width: 100%; }
+  .kosen-price-num { font-size: 34px; }
+}
